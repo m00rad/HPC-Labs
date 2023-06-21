@@ -30,6 +30,12 @@
     <ClCompile Include="Lab6.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Lab7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Lab3.h">
@@ -44,10 +50,10 @@
     <ClInclude Include="Lab6.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Lab7.h">
+    <ClInclude Include="Lab9.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Lab9.h">
+    <ClInclude Include="Lab7.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

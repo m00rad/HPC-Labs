@@ -144,6 +144,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Lab5.cpp" />
+    <ClCompile Include="Lab7.cpp" />
+    <ClCompile Include="Lab9.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Lab3.cpp" />
     <ClCompile Include="Lab4.cpp" />
