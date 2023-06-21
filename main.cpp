@@ -1,7 +1,11 @@
-#include <mpi.h>
 #include <iostream>
-#include <stdio.h>
+#include <mpi.h>
 #include "Lab3.h"
+#include "Lab4.h"
+#include "Lab5.h"
+#include "Lab6.h"
+#include "Lab7.h"
+#include "Lab9.h"
 
 using namespace std;
 int main() {
@@ -9,8 +13,8 @@ int main() {
 	int size, rank;
 	MPI_Comm_size(MPI_COMM_WORLD, &size);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-	Lab3::Lab3 lab3;
-	lab3.Hello(size, rank);
+	Lab4::Lab4 lab4;
+	lab4.Hands_On2(size, rank);
 	MPI_Finalize();
 	return 0;
 }

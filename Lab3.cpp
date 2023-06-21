@@ -1,9 +1,17 @@
 #include "Lab3.h"
 #include <mpi.h>
 #include <iostream>
-#include <stdio.h>
 using namespace std;
 namespace Lab3 {
+
+	void Lab3::Hello(int Size, int Rank)
+	{
+		char procrssor_name[MPI_MAX_PROCESSOR_NAME];
+		int name;
+		MPI_Get_processor_name(procrssor_name, &name);
+		printf("Hello my name is %s with rank %d out of %d processors \n", procrssor_name, Rank, Size);
+	}
+
 	void Lab3::Hands_On(int Size, int Rank)
 	{
 		int x, y;
@@ -22,12 +30,5 @@ namespace Lab3 {
 			MPI_Send(&y, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
 			printf("pong  %d\n", x);
 		}
-	}
-	void Lab3::Hello(int Size, int Rank)
-	{
-		char procrssor_name[MPI_MAX_PROCESSOR_NAME];
-		int name;
-		MPI_Get_processor_name(procrssor_name, &name);
-		printf("Hello my name is %s with rank %d out of %d processors \n",procrssor_name,Rank,Size);
 	}
 }
