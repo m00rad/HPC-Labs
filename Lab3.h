@@ -1,7 +1,6 @@
 #pragma once
 #include <mpi.h>
 #include <iostream>
-#include <stdio.h>
 
 namespace Lab3 {
     class Lab3
